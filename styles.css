@@ -5,3 +5,8 @@
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 
 .private-toggle{margin:0 0 18px;color:#ad6b4a}
+
+/* R1.1: decorative hero elements must not intercept CTA taps. */
+.hero-decoration,.hero-decoration *, .hero::after { pointer-events:none; }
+/* Notifications are informational; never block buttons beneath them. */
+.toast { pointer-events:none; }
