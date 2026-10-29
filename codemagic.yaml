@@ -1,0 +1,43 @@
+# Manual workflow only: no automatic trigger. Never commit signing credentials.
+workflows:
+  armonia-ios-unsigned:
+    name: Armonia iOS R1.3 - unsigned for external signing
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      node: v22.11.0
+      xcode: latest
+    scripts:
+      - name: Install dependencies
+        script: npm ci --no-audit --no-fund
+      - name: Prepare iOS bundle
+        script: |
+          npm run build
+          npx cap add ios --packagemanager SPM
+          npx cap sync ios
+      - name: Set Armonia icon and photo access descriptions
+        script: |
+          sips -z 1024 1024 "$CM_BUILD_DIR/assets/icon-512.png" \
+            --out "$CM_BUILD_DIR/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png"
+          plutil -replace NSPhotoLibraryUsageDescription -string "Seleziona le fotografie dei tuoi vestiti per archiviarle soltanto sul dispositivo." \
+            "$CM_BUILD_DIR/ios/App/App/Info.plist"
+          plutil -replace NSCameraUsageDescription -string "Scatta una foto ai tuoi vestiti per aggiungerli al guardaroba privato." \
+            "$CM_BUILD_DIR/ios/App/App/Info.plist"
+      - name: Build iPhone .app without signing
+        script: |
+          xcodebuild -project "$CM_BUILD_DIR/ios/App/App.xcodeproj" \
+            -scheme App -configuration Debug \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$CM_BUILD_DIR/derived" \
+            CODE_SIGNING_ALLOWED=NO build
+      - name: Package unsigned IPA
+        script: |
+          mkdir -p "$CM_BUILD_DIR/export/Payload"
+          cp -R "$CM_BUILD_DIR/derived/Build/Products/Debug-iphoneos/App.app" \
+            "$CM_BUILD_DIR/export/Payload/App.app"
+          cd "$CM_BUILD_DIR/export"
+          zip -qry "$CM_BUILD_DIR/Armonia_R1_3_UNSIGNED.ipa" Payload
+    artifacts:
+      - Armonia_R1_3_UNSIGNED.ipa
+      - derived/Build/Products/Debug-iphoneos/*.app
+      - /tmp/xcodebuild_logs/*.log

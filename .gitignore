@@ -1,0 +1,13 @@
+node_modules/
+www/
+ios/
+android/
+.env
+.env.*
+*.ipa
+*.mobileprovision
+*.p12
+*.p8
+.DS_Store
+.DerivedData/
+*.log

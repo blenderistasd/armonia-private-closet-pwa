@@ -60,7 +60,12 @@
     if(opts.occasion==='intimo') {
       return {looks:visible.sort((a,b)=>rankItem(b,opts)-rankItem(a,opts)).slice(0,4).map(i=>({ids:[i.id],score:rankItem(i,opts),explanation:'Selezione dal reparto privato.',missing:[]})),missing:visible.length?[]:['intimate']};
     }
-    const bySlot=(slot)=>visible.filter(i=>i.category===slot).sort((a,b)=>rankItem(b,opts)-rankItem(a,opts)).slice(0,12);
+    const isWorkout=['running','palestra'].includes(opts.occasion);
+    // Fitness outfits must not include heels, formal dresses or ordinary jeans.
+    const bySlot=(slot)=>visible.filter(i=>i.category===slot)
+      .filter(i=>!isWorkout || ['top','bottom','shoes'].includes(slot) &&
+        (i.style==='sportivo' || i.occasions?.includes(opts.occasion)))
+      .sort((a,b)=>rankItem(b,opts)-rankItem(a,opts)).slice(0,12);
     const tops=bySlot('top'),bottoms=bySlot('bottom'),dresses=bySlot('dress'),shoes=bySlot('shoes'),outers=bySlot('outer'),accessories=bySlot('accessory');
     const combos=[];
     const base=[];

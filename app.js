@@ -89,7 +89,7 @@
     <div class="settings-actions"><h2>Backup e sicurezza</h2><button class="setting-action" data-action="export">Esporta backup cifrato <span>↓</span></button><small>Consigliato dopo ogni caricamento importante. Il backup include foto e look, sempre cifrati.</small>
     <button class="setting-action" data-action="lock">Blocca subito il guardaroba <span>⌑</span></button><button class="setting-action danger-link" data-action="wipe">Elimina definitivamente tutti i dati <span>×</span></button></div>
     <div class="footnote"><strong>Nota importante</strong><p>Disinstallare l'app o cancellare i dati di Safari può eliminare il catalogo locale. Conserva il backup e la password separatamente. Nessun recupero password è possibile.</p></div>
-    <p class="version">ARMONIA · R1.2 · DEMO 30 · PRIVACY-FIRST · OFFLINE</p></div>`;}
+    <p class="version">ARMONIA · R1.3 · iOS READY · PRIVACY-FIRST · OFFLINE</p></div>`;}
   function editorModal(){
     if(!state.editor)return '';
     const i=state.editor;
@@ -125,16 +125,44 @@
     finally{setBusy(false);}
   }
   function lock(){state.key=null;state.items=[];state.saved=[];state.editor=null;state.queue=[];state.results=null;state.query='';state.showPrivateSaved=false;state.category='all';state.occasion='quotidiano';render();notify('Guardaroba bloccato.');}
+  // iOS/Safari may not expose createImageBitmap; HTMLImageElement is a local, safe fallback.
+  // Never sends photo data over the network. The canvas standardizes output to JPEG.
   async function photoToData(file){
-    if(!file.type.startsWith('image/'))throw new Error('Formato non supportato: carica una foto.');
+    if(!(file.type.startsWith('image/') || /\.(?:jpe?g|png|webp|heic|heif)$/i.test(file.name)))
+      throw new Error('Formato non supportato: scegli una fotografia JPG, PNG, WebP o HEIC.');
     if(file.size>25*1024*1024)throw new Error('Foto troppo grande (massimo 25 MB).');
-    const bitmap=await createImageBitmap(file);
-    const scale=Math.min(1,1200/Math.max(bitmap.width,bitmap.height));
-    const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
-    const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.fillStyle='#f9f7f3';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);
-    bitmap.close();
-    const color=predictColor(ctx,canvas.width,canvas.height);
-    return {image:canvas.toDataURL('image/jpeg',0.78),color};
+    let source=null, revoke=null;
+    if(typeof createImageBitmap==='function') {
+      try{source=await createImageBitmap(file);}catch{ /* fallback to the native image decoder */ }
+    }
+    if(!source) {
+      const url=URL.createObjectURL(file);
+      revoke=()=>URL.revokeObjectURL(url);
+      try {
+        source=await new Promise((resolve,reject)=>{
+          const picture=new Image();
+          picture.onload=()=>resolve(picture);
+          picture.onerror=()=>reject(new Error('Immagine non decodificabile su questo dispositivo. Per HEIC, prova a esportarla come JPEG.'));
+          picture.src=url;
+        });
+      }catch(err){revoke();throw err;}
+    }
+    try {
+      const w=source.width||source.naturalWidth,h=source.height||source.naturalHeight;
+      if(!w||!h)throw new Error('Foto priva di dimensioni valide.');
+      const scale=Math.min(1,1200/Math.max(w,h));
+      const canvas=document.createElement('canvas');
+      canvas.width=Math.max(1,Math.round(w*scale));canvas.height=Math.max(1,Math.round(h*scale));
+      const ctx=canvas.getContext('2d',{willReadFrequently:true});
+      if(!ctx)throw new Error('Elaborazione fotografica non disponibile.');
+      ctx.fillStyle='#f9f7f3';ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(source,0,0,canvas.width,canvas.height);
+      const color=predictColor(ctx,canvas.width,canvas.height);
+      return {image:canvas.toDataURL('image/jpeg',0.78),color};
+    }finally {
+      if(typeof source.close==='function')source.close();
+      if(revoke)revoke();
+    }
   }
   function predictColor(ctx,w,h){
     const data=ctx.getImageData(0,0,w,h).data;
@@ -152,16 +180,25 @@
     return Object.entries(votes).sort((a,b)=>b[1]-a[1])[0]?.[0]||'nero';
   }
   async function loadFiles(files){
-    const valid=[...files].filter(f=>f.type.startsWith('image/'));
-    if(!valid.length){notify('Seleziona foto JPG, PNG o HEIC compatibili con il browser.',true);return;}
-    if(valid.length>40){notify('Carica massimo 40 foto per volta.',true);return;}
-    try{
+    const selected=[...files];
+    const valid=selected.filter(f=>f.type.startsWith('image/')||/\.(?:jpe?g|png|webp|heic|heif)$/i.test(f.name));
+    if(!valid.length){notify('Seleziona fotografie JPG, PNG, WebP o HEIC leggibili sul dispositivo.',true);return;}
+    if(selected.length>40){notify('Carica massimo 40 foto per volta.',true);return;}
+    try {
       setBusy(true);
-      const prepared=[];
-      for(const file of valid){const p=await photoToData(file);prepared.push({image:p.image,color:p.color,name:file.name.replace(/\.[^.]+$/,'').replace(/[_-]/g,' ').slice(0,80),category:'top',style:'casual',occasions:[],seasons:[],favorite:false});}
+      const prepared=[],failed=[];
+      for(const file of valid){
+        try {
+          const p=await photoToData(file);
+          const name=file.name.replace(/\.[^.]+$/,'').replace(/[_-]/g,' ').slice(0,80);
+          prepared.push({image:p.image,color:p.color,name,category:'top',style:'casual',occasions:[],seasons:[],favorite:false});
+        }catch(err){failed.push(file.name+': '+err.message);}
+      }
+      if(!prepared.length)throw new Error(failed[0]||'Nessuna foto leggibile.');
       state.queue.push(...prepared);
       if(!state.editor)state.editor=state.queue.shift();
-      render();notify(`Foto pronte: ${valid.length}. Completa la categoria e salva.`);
+      render();
+      notify(`${prepared.length} foto pronte${failed.length?`; ${failed.length} non leggibili (usa JPG per HEIC non supportati)`:''}. Completa e salva i capi.`,!!failed.length);
     }catch(err){notify('Importazione non riuscita: '+err.message,true);}
     finally{setBusy(false);}
   }
