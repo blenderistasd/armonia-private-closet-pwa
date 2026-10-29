@@ -3,7 +3,7 @@
 # Output unsigned; personal signing and physical installation are separate.
 workflows:
   armonia-ios-unsigned:
-    name: Armonia iOS R1.3 - unsigned ARM64
+    name: Armonia iOS R1.4 - unsigned ARM64
     instance_type: mac_mini_m2
     max_build_duration: 30
     environment:
@@ -58,8 +58,8 @@ workflows:
           /usr/bin/lipo -archs "$APP/App" | grep -qw arm64
           mkdir -p "$CM_BUILD_DIR/export/Payload" "$CM_BUILD_DIR/artifacts"
           cp -R "$APP" "$CM_BUILD_DIR/export/Payload/App.app"
-          (cd "$CM_BUILD_DIR/export" && zip -qry "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.ipa" Payload)
-          shasum -a 256 "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.ipa" > "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.sha256"
+          (cd "$CM_BUILD_DIR/export" && zip -qry "$CM_BUILD_DIR/artifacts/Armonia_R1_4_UNSIGNED.ipa" Payload)
+          shasum -a 256 "$CM_BUILD_DIR/artifacts/Armonia_R1_4_UNSIGNED.ipa" > "$CM_BUILD_DIR/artifacts/Armonia_R1_4_UNSIGNED.sha256"
           echo "UNSIGNED ARM64; requires personal iOS signing before installation" > "$CM_BUILD_DIR/artifacts/INSTALL_STATUS.txt"
     artifacts:
       - artifacts/*.ipa

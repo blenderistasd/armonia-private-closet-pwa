@@ -1,0 +1,2445 @@
+{
+  "dataset": "alexeygrigorev/clothing-dataset",
+  "sourceUrl": "https://github.com/alexeygrigorev/clothing-dataset",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "photoCount": 100,
+  "items": [
+    {
+      "key": "real_001",
+      "name": "T-shirt rosa · foto 001",
+      "category": "top",
+      "color": "rosa",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_001.webp",
+      "originalLabel": "T-Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/769b4c86-0e6b-4576-8993-0fa927ace181.jpg",
+      "sourceId": "769b4c86-0e6b-4576-8993-0fa927ace181",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_002",
+      "name": "T-shirt bianco · foto 002",
+      "category": "top",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_002.webp",
+      "originalLabel": "T-Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c1ab2b23-a769-47d8-a2ff-7d7842aa7996.jpg",
+      "sourceId": "c1ab2b23-a769-47d8-a2ff-7d7842aa7996",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_003",
+      "name": "T-shirt grigio · foto 003",
+      "category": "top",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_003.webp",
+      "originalLabel": "T-Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d90a72b6-288f-470e-b478-530bbd635826.jpg",
+      "sourceId": "d90a72b6-288f-470e-b478-530bbd635826",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_004",
+      "name": "T-shirt blu · foto 004",
+      "category": "top",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_004.webp",
+      "originalLabel": "T-Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/692b2e5c-17f5-4620-a365-e943dff37dc5.jpg",
+      "sourceId": "692b2e5c-17f5-4620-a365-e943dff37dc5",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_005",
+      "name": "T-shirt blu · foto 005",
+      "category": "top",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_005.webp",
+      "originalLabel": "T-Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d15b7c7a-cd00-415e-bd33-6c44c7e7be61.jpg",
+      "sourceId": "d15b7c7a-cd00-415e-bd33-6c44c7e7be61",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_006",
+      "name": "Camicia blu · foto 006",
+      "category": "top",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_006.webp",
+      "originalLabel": "Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e713ee55-04ea-459e-ac7a-fef088e07a3c.jpg",
+      "sourceId": "e713ee55-04ea-459e-ac7a-fef088e07a3c",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_007",
+      "name": "Camicia beige · foto 007",
+      "category": "top",
+      "color": "beige",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_007.webp",
+      "originalLabel": "Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/b4516e07-fbcf-4373-b8a3-354316fd3581.jpg",
+      "sourceId": "b4516e07-fbcf-4373-b8a3-354316fd3581",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_008",
+      "name": "Camicia grigio · foto 008",
+      "category": "top",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_008.webp",
+      "originalLabel": "Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e1cac9ff-3c67-4075-9c91-b6535b9276cd.jpg",
+      "sourceId": "e1cac9ff-3c67-4075-9c91-b6535b9276cd",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_009",
+      "name": "Camicia blu · foto 009",
+      "category": "top",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_009.webp",
+      "originalLabel": "Shirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/cddf82db-540f-41f3-9102-c5228729afa5.jpg",
+      "sourceId": "cddf82db-540f-41f3-9102-c5228729afa5",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_010",
+      "name": "Blusa bianco · foto 010",
+      "category": "top",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_010.webp",
+      "originalLabel": "Blouse",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/1c60316b-2944-4224-9188-472416d193f9.jpg",
+      "sourceId": "1c60316b-2944-4224-9188-472416d193f9",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_011",
+      "name": "Blusa nero · foto 011",
+      "category": "top",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_011.webp",
+      "originalLabel": "Blouse",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/9568b507-e113-4670-ae39-30a444e41cac.jpg",
+      "sourceId": "9568b507-e113-4670-ae39-30a444e41cac",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_012",
+      "name": "Maglia manica lunga nero · foto 012",
+      "category": "top",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_012.webp",
+      "originalLabel": "Longsleeve",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/02c1ab85-da02-4fbd-a8b8-a115de4e0c53.jpg",
+      "sourceId": "02c1ab85-da02-4fbd-a8b8-a115de4e0c53",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_013",
+      "name": "Maglia manica lunga nero · foto 013",
+      "category": "top",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_013.webp",
+      "originalLabel": "Longsleeve",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/44bed517-2dc2-4df2-b85f-4fd28730c933.jpg",
+      "sourceId": "44bed517-2dc2-4df2-b85f-4fd28730c933",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_014",
+      "name": "Maglia manica lunga marrone · foto 014",
+      "category": "top",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_014.webp",
+      "originalLabel": "Longsleeve",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/3c4d6cf5-113b-4a26-8e60-e8ab594eaa0e.jpg",
+      "sourceId": "3c4d6cf5-113b-4a26-8e60-e8ab594eaa0e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_015",
+      "name": "Polo verde · foto 015",
+      "category": "top",
+      "color": "verde",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_015.webp",
+      "originalLabel": "Polo",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/3d9c818a-0a13-4594-b24a-07ba9ae0686d.jpg",
+      "sourceId": "3d9c818a-0a13-4594-b24a-07ba9ae0686d",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_016",
+      "name": "Polo azzurro · foto 016",
+      "category": "top",
+      "color": "azzurro",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_016.webp",
+      "originalLabel": "Polo",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c6cdf184-6bc0-4a74-b979-cd8764781ab5.jpg",
+      "sourceId": "c6cdf184-6bc0-4a74-b979-cd8764781ab5",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_017",
+      "name": "Top grigio · foto 017",
+      "category": "top",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_017.webp",
+      "originalLabel": "Top",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/29d14f73-4983-4755-8efd-af82891267bc.jpg",
+      "sourceId": "29d14f73-4983-4755-8efd-af82891267bc",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_018",
+      "name": "Top nero · foto 018",
+      "category": "top",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_018.webp",
+      "originalLabel": "Top",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e56c1cd4-4852-4310-ae2c-9bcaf7bab68b.jpg",
+      "sourceId": "e56c1cd4-4852-4310-ae2c-9bcaf7bab68b",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_019",
+      "name": "Felpa con cappuccio blu · foto 019",
+      "category": "top",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_019.webp",
+      "originalLabel": "Hoodie",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/b78fee17-fe42-4895-a4da-7b3aac0484ae.jpg",
+      "sourceId": "b78fee17-fe42-4895-a4da-7b3aac0484ae",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_020",
+      "name": "Felpa con cappuccio beige · foto 020",
+      "category": "top",
+      "color": "beige",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_020.webp",
+      "originalLabel": "Hoodie",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/8a21d557-1c9d-4769-af62-e8cf24dbdf0e.jpg",
+      "sourceId": "8a21d557-1c9d-4769-af62-e8cf24dbdf0e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_021",
+      "name": "Pantaloni blu · foto 021",
+      "category": "bottom",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_021.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e78ca83f-6aed-43a1-bfea-0cd014316a1e.jpg",
+      "sourceId": "e78ca83f-6aed-43a1-bfea-0cd014316a1e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_022",
+      "name": "Pantaloni nero · foto 022",
+      "category": "bottom",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_022.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/041cea74-d96a-45ff-a8e2-d311ee0f21d8.jpg",
+      "sourceId": "041cea74-d96a-45ff-a8e2-d311ee0f21d8",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_023",
+      "name": "Pantaloni nero · foto 023",
+      "category": "bottom",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_023.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/f97dba0a-37f7-452b-9159-90d4d6757473.jpg",
+      "sourceId": "f97dba0a-37f7-452b-9159-90d4d6757473",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_024",
+      "name": "Pantaloni grigio · foto 024",
+      "category": "bottom",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_024.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/a8a1f779-0234-4c3e-9afb-2d81102fe27f.jpg",
+      "sourceId": "a8a1f779-0234-4c3e-9afb-2d81102fe27f",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_025",
+      "name": "Pantaloni marrone · foto 025",
+      "category": "bottom",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_025.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/6c86fcb8-3bb1-4b70-bf96-b756b992a9f9.jpg",
+      "sourceId": "6c86fcb8-3bb1-4b70-bf96-b756b992a9f9",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_026",
+      "name": "Pantaloni grigio · foto 026",
+      "category": "bottom",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_026.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/bcc899d1-550b-4401-a87d-efd409a06286.jpg",
+      "sourceId": "bcc899d1-550b-4401-a87d-efd409a06286",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_027",
+      "name": "Pantaloni rosso · foto 027",
+      "category": "bottom",
+      "color": "rosso",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_027.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c9ae97dd-eeb4-4ada-b7e2-b2728cf5758f.jpg",
+      "sourceId": "c9ae97dd-eeb4-4ada-b7e2-b2728cf5758f",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_028",
+      "name": "Pantaloni marrone · foto 028",
+      "category": "bottom",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_028.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/77b2ead2-e103-45f2-a47e-96f6dfd88b41.jpg",
+      "sourceId": "77b2ead2-e103-45f2-a47e-96f6dfd88b41",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_029",
+      "name": "Pantaloni azzurro · foto 029",
+      "category": "bottom",
+      "color": "azzurro",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_029.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/7dc9022e-5c1b-4d8e-8b36-8790f15f4b6d.jpg",
+      "sourceId": "7dc9022e-5c1b-4d8e-8b36-8790f15f4b6d",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_030",
+      "name": "Pantaloni blu · foto 030",
+      "category": "bottom",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_030.webp",
+      "originalLabel": "Pants",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/0e684087-83bf-4153-90f4-6f7ba6f25338.jpg",
+      "sourceId": "0e684087-83bf-4153-90f4-6f7ba6f25338",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_031",
+      "name": "Shorts nero · foto 031",
+      "category": "bottom",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "sportivo",
+      "occasions": [
+        "running",
+        "palestra"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_031.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/97c4ebd3-715f-4809-881a-7363ce0da4cb.jpg",
+      "sourceId": "97c4ebd3-715f-4809-881a-7363ce0da4cb",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_032",
+      "name": "Shorts grigio · foto 032",
+      "category": "bottom",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "sportivo",
+      "occasions": [
+        "running",
+        "palestra"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_032.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/6f50f3a9-d730-4c73-828f-d155291d4d5b.jpg",
+      "sourceId": "6f50f3a9-d730-4c73-828f-d155291d4d5b",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_033",
+      "name": "Shorts blu · foto 033",
+      "category": "bottom",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_033.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/3e203f7a-5b90-4b27-9303-a5634a80f015.jpg",
+      "sourceId": "3e203f7a-5b90-4b27-9303-a5634a80f015",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_034",
+      "name": "Shorts rosso · foto 034",
+      "category": "bottom",
+      "color": "rosso",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_034.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/b9a10398-fdc0-425d-ac63-3b80b45eb899.jpg",
+      "sourceId": "b9a10398-fdc0-425d-ac63-3b80b45eb899",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_035",
+      "name": "Shorts grigio · foto 035",
+      "category": "bottom",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_035.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/808694ff-b6de-4f50-a107-a2ab0de65192.jpg",
+      "sourceId": "808694ff-b6de-4f50-a107-a2ab0de65192",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_036",
+      "name": "Shorts blu · foto 036",
+      "category": "bottom",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_036.webp",
+      "originalLabel": "Shorts",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/1e302085-eeb2-46ff-a4f6-e9bb5cfa44b1.jpg",
+      "sourceId": "1e302085-eeb2-46ff-a4f6-e9bb5cfa44b1",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_037",
+      "name": "Gonna nero · foto 037",
+      "category": "bottom",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_037.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/adefd137-8fd0-415b-8139-f406e5f46182.jpg",
+      "sourceId": "adefd137-8fd0-415b-8139-f406e5f46182",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_038",
+      "name": "Gonna rosso · foto 038",
+      "category": "bottom",
+      "color": "rosso",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_038.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/84b4da94-65c0-471e-a7ad-2ba6360f45bb.jpg",
+      "sourceId": "84b4da94-65c0-471e-a7ad-2ba6360f45bb",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_039",
+      "name": "Gonna azzurro · foto 039",
+      "category": "bottom",
+      "color": "azzurro",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_039.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/667a7349-f0a7-43bc-bb70-246b61e6354b.jpg",
+      "sourceId": "667a7349-f0a7-43bc-bb70-246b61e6354b",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_040",
+      "name": "Gonna nero · foto 040",
+      "category": "bottom",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_040.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/86d25b2c-d388-49f6-9616-d2ad838c7148.jpg",
+      "sourceId": "86d25b2c-d388-49f6-9616-d2ad838c7148",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_041",
+      "name": "Gonna bianco · foto 041",
+      "category": "bottom",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_041.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/ccb57961-f839-44fc-be22-8b8a5944f8b3.jpg",
+      "sourceId": "ccb57961-f839-44fc-be22-8b8a5944f8b3",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_042",
+      "name": "Gonna verde · foto 042",
+      "category": "bottom",
+      "color": "verde",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_042.webp",
+      "originalLabel": "Skirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/4c2b720f-6916-4edf-a732-847c55eec881.jpg",
+      "sourceId": "4c2b720f-6916-4edf-a732-847c55eec881",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_043",
+      "name": "Abito viola · foto 043",
+      "category": "dress",
+      "color": "viola",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_043.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/618876ca-630c-4eb4-98ca-07c60124ef54.jpg",
+      "sourceId": "618876ca-630c-4eb4-98ca-07c60124ef54",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_044",
+      "name": "Abito nero · foto 044",
+      "category": "dress",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_044.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/a10eee1b-7361-44c4-9dd8-90e91e083573.jpg",
+      "sourceId": "a10eee1b-7361-44c4-9dd8-90e91e083573",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_045",
+      "name": "Abito viola · foto 045",
+      "category": "dress",
+      "color": "viola",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_045.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d52566d2-6cb0-49a6-b5d7-b514298c0b10.jpg",
+      "sourceId": "d52566d2-6cb0-49a6-b5d7-b514298c0b10",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_046",
+      "name": "Abito bianco · foto 046",
+      "category": "dress",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_046.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/de478f22-21f5-4992-a22a-edc084336fe8.jpg",
+      "sourceId": "de478f22-21f5-4992-a22a-edc084336fe8",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_047",
+      "name": "Abito nero · foto 047",
+      "category": "dress",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_047.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/4334620b-316c-4762-a116-9add429220d0.jpg",
+      "sourceId": "4334620b-316c-4762-a116-9add429220d0",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_048",
+      "name": "Abito rosa · foto 048",
+      "category": "dress",
+      "color": "rosa",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_048.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/35f5fecb-755a-45d6-ac3d-3feb8299dc87.jpg",
+      "sourceId": "35f5fecb-755a-45d6-ac3d-3feb8299dc87",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_049",
+      "name": "Abito blu · foto 049",
+      "category": "dress",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_049.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/65234c60-a673-4037-8bf4-7a04d7037c34.jpg",
+      "sourceId": "65234c60-a673-4037-8bf4-7a04d7037c34",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_050",
+      "name": "Abito bianco · foto 050",
+      "category": "dress",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_050.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/09c09dd1-ccef-4ced-96dd-ba3b828a49b4.jpg",
+      "sourceId": "09c09dd1-ccef-4ced-96dd-ba3b828a49b4",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_051",
+      "name": "Abito blu · foto 051",
+      "category": "dress",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_051.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/ce27bde3-b523-449c-87b0-35c4317d32d1.jpg",
+      "sourceId": "ce27bde3-b523-449c-87b0-35c4317d32d1",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_052",
+      "name": "Abito blu · foto 052",
+      "category": "dress",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_052.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/7a634f1b-53ef-4314-b4d0-829a4be0933c.jpg",
+      "sourceId": "7a634f1b-53ef-4314-b4d0-829a4be0933c",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_053",
+      "name": "Abito nero · foto 053",
+      "category": "dress",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_053.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d1dd492a-77b6-4d76-bc22-852cda12c437.jpg",
+      "sourceId": "d1dd492a-77b6-4d76-bc22-852cda12c437",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_054",
+      "name": "Abito grigio · foto 054",
+      "category": "dress",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_054.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d4477250-7054-436a-a337-baad421bc8cc.jpg",
+      "sourceId": "d4477250-7054-436a-a337-baad421bc8cc",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_055",
+      "name": "Abito rosa · foto 055",
+      "category": "dress",
+      "color": "rosa",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_055.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/2adf987d-a985-4023-81d4-adf9368ca251.jpg",
+      "sourceId": "2adf987d-a985-4023-81d4-adf9368ca251",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_056",
+      "name": "Abito rosso · foto 056",
+      "category": "dress",
+      "color": "rosso",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_056.webp",
+      "originalLabel": "Dress",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/b769e3fb-d74b-4695-9d86-afcc5f533f75.jpg",
+      "sourceId": "b769e3fb-d74b-4695-9d86-afcc5f533f75",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_057",
+      "name": "Giacca grigio · foto 057",
+      "category": "outer",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_057.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/f4f59703-4f85-40f5-8ff4-79f2eca93684.jpg",
+      "sourceId": "f4f59703-4f85-40f5-8ff4-79f2eca93684",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_058",
+      "name": "Giacca grigio · foto 058",
+      "category": "outer",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_058.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/0d73e759-eeaa-43ab-98d4-196b6974c41e.jpg",
+      "sourceId": "0d73e759-eeaa-43ab-98d4-196b6974c41e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_059",
+      "name": "Giacca nero · foto 059",
+      "category": "outer",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_059.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/62903846-8657-43fb-86a7-849d78cc73e1.jpg",
+      "sourceId": "62903846-8657-43fb-86a7-849d78cc73e1",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_060",
+      "name": "Giacca rosa · foto 060",
+      "category": "outer",
+      "color": "rosa",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_060.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/481400c6-806c-4a35-8f24-370152f564d2.jpg",
+      "sourceId": "481400c6-806c-4a35-8f24-370152f564d2",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_061",
+      "name": "Giacca bianco · foto 061",
+      "category": "outer",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_061.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/524ac1d8-674e-4edc-8e3b-3330e529709e.jpg",
+      "sourceId": "524ac1d8-674e-4edc-8e3b-3330e529709e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_062",
+      "name": "Giacca marrone · foto 062",
+      "category": "outer",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_062.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d4e9cf66-6805-4a90-a34e-ffc7cf95b064.jpg",
+      "sourceId": "d4e9cf66-6805-4a90-a34e-ffc7cf95b064",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_063",
+      "name": "Giacca blu · foto 063",
+      "category": "outer",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_063.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/df6097a1-e252-4d2d-bf7a-2d208f932273.jpg",
+      "sourceId": "df6097a1-e252-4d2d-bf7a-2d208f932273",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_064",
+      "name": "Giacca nero · foto 064",
+      "category": "outer",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_064.webp",
+      "originalLabel": "Outwear",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/0cb4fc9c-7d38-4f11-95ea-71b61d0ae54c.jpg",
+      "sourceId": "0cb4fc9c-7d38-4f11-95ea-71b61d0ae54c",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_065",
+      "name": "Blazer nero · foto 065",
+      "category": "outer",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_065.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/a04270d0-c1f1-4f31-93cc-8555ac708ec4.jpg",
+      "sourceId": "a04270d0-c1f1-4f31-93cc-8555ac708ec4",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_066",
+      "name": "Blazer beige · foto 066",
+      "category": "outer",
+      "color": "beige",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_066.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/eccc6e83-73f1-47e1-9987-2a16d135cd24.jpg",
+      "sourceId": "eccc6e83-73f1-47e1-9987-2a16d135cd24",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_067",
+      "name": "Blazer grigio · foto 067",
+      "category": "outer",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_067.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/ce9e9c65-8521-40d8-b37d-8a5129f6b361.jpg",
+      "sourceId": "ce9e9c65-8521-40d8-b37d-8a5129f6b361",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_068",
+      "name": "Blazer blu · foto 068",
+      "category": "outer",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_068.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d581491b-bc59-48a2-9849-21ede8213e45.jpg",
+      "sourceId": "d581491b-bc59-48a2-9849-21ede8213e45",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_069",
+      "name": "Blazer blu · foto 069",
+      "category": "outer",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_069.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e66a278d-15be-429f-a833-cf529e8c493c.jpg",
+      "sourceId": "e66a278d-15be-429f-a833-cf529e8c493c",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_070",
+      "name": "Blazer azzurro · foto 070",
+      "category": "outer",
+      "color": "azzurro",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_070.webp",
+      "originalLabel": "Blazer",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/8ab0ea35-7d92-4eb3-9271-793931b65f37.jpg",
+      "sourceId": "8ab0ea35-7d92-4eb3-9271-793931b65f37",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_071",
+      "name": "Felpa con cappuccio blu · foto 071",
+      "category": "outer",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_071.webp",
+      "originalLabel": "Hoodie",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/29002194-4f1c-4ef8-aac0-3e92d79d5b37.jpg",
+      "sourceId": "29002194-4f1c-4ef8-aac0-3e92d79d5b37",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_072",
+      "name": "Felpa con cappuccio grigio · foto 072",
+      "category": "outer",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno",
+        "primavera"
+      ],
+      "asset": "assets/photos_cc0/real_072.webp",
+      "originalLabel": "Hoodie",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e98f1185-29fd-42e9-9fde-f0ee5140ad6a.jpg",
+      "sourceId": "e98f1185-29fd-42e9-9fde-f0ee5140ad6a",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_073",
+      "name": "Scarpe grigio · foto 073",
+      "category": "shoes",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_073.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/e6230ea8-cef3-4046-bccf-6d78135ad658.jpg",
+      "sourceId": "e6230ea8-cef3-4046-bccf-6d78135ad658",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_074",
+      "name": "Scarpe viola · foto 074",
+      "category": "shoes",
+      "color": "viola",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_074.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/eb1677ad-53da-4b3f-bced-e5c01a7e64bf.jpg",
+      "sourceId": "eb1677ad-53da-4b3f-bced-e5c01a7e64bf",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_075",
+      "name": "Scarpe marrone · foto 075",
+      "category": "shoes",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_075.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/110dcf71-51c7-4b18-9a45-5d3dc1fef6d8.jpg",
+      "sourceId": "110dcf71-51c7-4b18-9a45-5d3dc1fef6d8",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_076",
+      "name": "Scarpe marrone · foto 076",
+      "category": "shoes",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_076.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/8b6de4c0-3f40-476d-bad4-a4ee3275176e.jpg",
+      "sourceId": "8b6de4c0-3f40-476d-bad4-a4ee3275176e",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_077",
+      "name": "Scarpe verde · foto 077",
+      "category": "shoes",
+      "color": "verde",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_077.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/18ff3e0e-6676-4f26-8be4-a992217ac524.jpg",
+      "sourceId": "18ff3e0e-6676-4f26-8be4-a992217ac524",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_078",
+      "name": "Scarpe nero · foto 078",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_078.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/f8a7abd7-f479-40d0-ab45-fcdaef82e1c5.jpg",
+      "sourceId": "f8a7abd7-f479-40d0-ab45-fcdaef82e1c5",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_079",
+      "name": "Scarpe blu · foto 079",
+      "category": "shoes",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_079.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c58c46e1-68e6-4272-8e37-09757b271386.jpg",
+      "sourceId": "c58c46e1-68e6-4272-8e37-09757b271386",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_080",
+      "name": "Scarpe nero · foto 080",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_080.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c8582c70-17af-4f48-a866-eac7e0572560.jpg",
+      "sourceId": "c8582c70-17af-4f48-a866-eac7e0572560",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_081",
+      "name": "Scarpe marrone · foto 081",
+      "category": "shoes",
+      "color": "marrone",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_081.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/3a5f03b9-9afb-4fd4-bc3e-2eb56f83801d.jpg",
+      "sourceId": "3a5f03b9-9afb-4fd4-bc3e-2eb56f83801d",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_082",
+      "name": "Scarpe bianco · foto 082",
+      "category": "shoes",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_082.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/1e170a9f-9437-4eae-bd67-389c48b93ff9.jpg",
+      "sourceId": "1e170a9f-9437-4eae-bd67-389c48b93ff9",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_083",
+      "name": "Scarpe bianco · foto 083",
+      "category": "shoes",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_083.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d09be031-92c0-4b14-bb7d-6d4926d3f6e2.jpg",
+      "sourceId": "d09be031-92c0-4b14-bb7d-6d4926d3f6e2",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_084",
+      "name": "Scarpe rosa · foto 084",
+      "category": "shoes",
+      "color": "rosa",
+      "colorEstimated": false,
+      "style": "sportivo",
+      "occasions": [
+        "running",
+        "palestra",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_084.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/9f922e1a-0627-489b-9e0f-f8dd3fb520c9.jpg",
+      "sourceId": "9f922e1a-0627-489b-9e0f-f8dd3fb520c9",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_085",
+      "name": "Scarpe nero · foto 085",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_085.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/ea4afd28-2e6b-41c8-9d10-6bce862a482c.jpg",
+      "sourceId": "ea4afd28-2e6b-41c8-9d10-6bce862a482c",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_086",
+      "name": "Scarpe nero · foto 086",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate"
+      ],
+      "asset": "assets/photos_cc0/real_086.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/cc34d80f-6e80-446b-b9a7-3927f857d0a4.jpg",
+      "sourceId": "cc34d80f-6e80-446b-b9a7-3927f857d0a4",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_087",
+      "name": "Scarpe nero · foto 087",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_087.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/2d77ba82-6ebd-4cb0-8e3b-338414051968.jpg",
+      "sourceId": "2d77ba82-6ebd-4cb0-8e3b-338414051968",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_088",
+      "name": "Scarpe nero · foto 088",
+      "category": "shoes",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "elegante",
+      "occasions": [
+        "ufficio",
+        "sera",
+        "cerimonia"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_088.webp",
+      "originalLabel": "Shoes",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/35707ebd-0264-4bbf-b5f2-a33c5c4bff4d.jpg",
+      "sourceId": "35707ebd-0264-4bbf-b5f2-a33c5c4bff4d",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_089",
+      "name": "Cappello beige · foto 089",
+      "category": "accessory",
+      "color": "beige",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_089.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d7dfcea1-9e64-4eb8-9293-e570f48d4c01.jpg",
+      "sourceId": "d7dfcea1-9e64-4eb8-9293-e570f48d4c01",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_090",
+      "name": "Cappello verde · foto 090",
+      "category": "accessory",
+      "color": "verde",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_090.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/78a07855-5a8e-496f-a516-a69e3784bbf1.jpg",
+      "sourceId": "78a07855-5a8e-496f-a516-a69e3784bbf1",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_091",
+      "name": "Cappello nero · foto 091",
+      "category": "accessory",
+      "color": "nero",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_091.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/79307c6e-cc11-422f-8b55-d01148cc94b3.jpg",
+      "sourceId": "79307c6e-cc11-422f-8b55-d01148cc94b3",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_092",
+      "name": "Cappello bianco · foto 092",
+      "category": "accessory",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_092.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/d9024c75-93f8-4b22-aeff-f7966d924c57.jpg",
+      "sourceId": "d9024c75-93f8-4b22-aeff-f7966d924c57",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_093",
+      "name": "Cappello bianco · foto 093",
+      "category": "accessory",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_093.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/ff62e59f-c949-4f8e-8fca-798ab3e174c5.jpg",
+      "sourceId": "ff62e59f-c949-4f8e-8fca-798ab3e174c5",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_094",
+      "name": "Cappello grigio · foto 094",
+      "category": "accessory",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_094.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c09d1e27-97cf-4d81-b156-ab5226966875.jpg",
+      "sourceId": "c09d1e27-97cf-4d81-b156-ab5226966875",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_095",
+      "name": "Cappello grigio · foto 095",
+      "category": "accessory",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_095.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/29e0414f-80ca-432c-a9c0-3427298c245a.jpg",
+      "sourceId": "29e0414f-80ca-432c-a9c0-3427298c245a",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_096",
+      "name": "Cappello arancione · foto 096",
+      "category": "accessory",
+      "color": "arancione",
+      "colorEstimated": false,
+      "style": "casual",
+      "occasions": [
+        "quotidiano",
+        "viaggio"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno"
+      ],
+      "asset": "assets/photos_cc0/real_096.webp",
+      "originalLabel": "Hat",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/4976873a-5058-45f9-b994-3d79868533a8.jpg",
+      "sourceId": "4976873a-5058-45f9-b994-3d79868533a8",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_097",
+      "name": "Canotta intima bianco · foto 097",
+      "category": "intimate",
+      "color": "bianco",
+      "colorEstimated": false,
+      "style": "minimal",
+      "occasions": [
+        "intimo"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_097.webp",
+      "originalLabel": "Undershirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/3c5ff556-36e1-442e-8ae7-1b836067916d.jpg",
+      "sourceId": "3c5ff556-36e1-442e-8ae7-1b836067916d",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_098",
+      "name": "Canotta intima grigio · foto 098",
+      "category": "intimate",
+      "color": "grigio",
+      "colorEstimated": false,
+      "style": "minimal",
+      "occasions": [
+        "intimo"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_098.webp",
+      "originalLabel": "Undershirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/740b1190-d0f7-4de4-9a7e-894f27c107a4.jpg",
+      "sourceId": "740b1190-d0f7-4de4-9a7e-894f27c107a4",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_099",
+      "name": "Canotta intima blu · foto 099",
+      "category": "intimate",
+      "color": "blu",
+      "colorEstimated": false,
+      "style": "minimal",
+      "occasions": [
+        "intimo"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_099.webp",
+      "originalLabel": "Undershirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c6f8e37c-f09c-4721-ac92-c64494a6f006.jpg",
+      "sourceId": "c6f8e37c-f09c-4721-ac92-c64494a6f006",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    },
+    {
+      "key": "real_100",
+      "name": "Canotta intima giallo · foto 100",
+      "category": "intimate",
+      "color": "giallo",
+      "colorEstimated": false,
+      "style": "minimal",
+      "occasions": [
+        "intimo"
+      ],
+      "seasons": [
+        "primavera",
+        "estate",
+        "autunno",
+        "inverno"
+      ],
+      "asset": "assets/photos_cc0/real_100.webp",
+      "originalLabel": "Undershirt",
+      "source": "https://raw.githubusercontent.com/alexeygrigorev/clothing-dataset/master/images/c999171e-d9f8-43fc-8188-825bd16d8ebc.jpg",
+      "sourceId": "c999171e-d9f8-43fc-8188-825bd16d8ebc",
+      "license": "CC0-1.0",
+      "photoDemo": true,
+      "originNote": "Foto autentica (dataset CC0); tag colore e occasione da verificare."
+    }
+  ]
+}

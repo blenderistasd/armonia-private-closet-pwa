@@ -1,8 +1,8 @@
 {
   "name": "armonia-private-closet",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
-  "description": "Armonia native iPhone app \u2014 encrypted local wardrobe",
+  "description": "Armonia native iPhone app — encrypted local wardrobe",
   "scripts": {
     "build": "node scripts/build-web.cjs",
     "test:logic": "node tests/test_engine_vault.cjs",

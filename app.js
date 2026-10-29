@@ -10,7 +10,8 @@
   const icon=(s)=>({'home':'⌂','closet':'▦','stylist':'✧','saved':'♡','settings':'⚙'})[s]||'•';
   const navs=[['home','Home'],['closet','Guardaroba'],['stylist','Stylist'],['saved','Salvati'],['settings','Altro']];
   const count=()=>state.items.length;
-  const demoCount=()=>state.items.filter(i=>i.demo===true).length;
+  const demoCount=()=>state.items.filter(i=>i.demo===true && !i.photoDemo).length;
+  const photoDemoCount=()=>state.items.filter(i=>i.photoDemo===true).length;
   let toastTimeout;
   function notify(message,error=false){clearTimeout(toastTimeout);toast.textContent=message;toast.className='toast show'+(error?' danger':'');toastTimeout=setTimeout(()=>toast.className='toast',4100);}
   function setBusy(b){state.busy=b;document.querySelectorAll('button[type=submit]').forEach(x=>x.disabled=b);}
@@ -48,7 +49,8 @@
   <section class="hero"><div class="hero-decoration"><span class="ring ring-one"></span><span class="ring ring-two"></span><span class="hero-star">✧</span></div><p class="hero-eyebrow">ARMONIA STYLIST</p><h1>Ogni giorno,<br><em>una versione</em><br>di te.</h1><p>Il look giusto è già nel tuo armadio. Ti aiutiamo a trovarlo.</p><button class="hero-button" data-nav="stylist">Crea il mio outfit <span>↗</span></button></section>
   <div class="kpi-row"><div class="kpi"><strong>${count().toString().padStart(2,'0')}</strong><span>Capi nel guardaroba</span></div><div class="kpi"><strong>${state.saved.length.toString().padStart(2,'0')}</strong><span>Look salvati</span></div></div>
   <div class="section-header"><div><span class="eyebrow">PERSONAL CLOSET</span><h2>Ultimi arrivi</h2></div><button class="text-link" data-nav="closet">Vedi tutto ↗</button></div>${latestGrid()}
-  <section class="demo-lab"><div><p class="eyebrow">LABORATORIO DEMO</p><h3>30 capi per provarlo.</h3><p>${demoCount()?`${demoCount()} di 30 capi illustrati inseriti, separati dai tuoi.`:'Abiti, sport, scarpe e accessori simulati per testare gli abbinamenti. Non sono vestiti reali.'}</p><div class="demo-actions"><button class="primary" data-action="load-demo">${demoCount()===30?'Demo già caricata':`Carica ${30-demoCount()} capi demo`}</button>${demoCount()?'<button class="outline" data-action="remove-demo">Rimuovi solo demo</button>':''}</div></div><span class="demo-illustration">✧</span></section>
+  <section class="demo-lab demo-photo-lab"><div><p class="eyebrow">100 FOTO REALI · CAMPIONE CC0</p><h3>100 capi fotografici.</h3><p>${photoDemoCount()} di 100 foto importate nel guardaroba cifrato. Campione di abbigliamento fisico, non un catalogo commerciale.</p><p>Colori e occasioni sono tag dimostrativi da verificare.</p><div class="demo-actions"><button class="primary" data-action="load-photo-demo">${photoDemoCount()===100?'Tutte le 100 foto caricate':`Carica ${100-photoDemoCount()} capi fotografici`}</button>${photoDemoCount()?'<button class="outline" data-action="remove-photo-demo">Rimuovi solo le foto demo</button>':''}</div></div><span class="demo-illustration">◈</span></section>
+  <section class="demo-lab"><div><p class="eyebrow">LABORATORIO DEMO</p><h3>30 capi per provarlo.</h3><p>${demoCount()?`${demoCount()} di 30 capi illustrati inseriti, separati dai tuoi.`:'Abiti, sport, scarpe e accessori simulati per testare gli abbinamenti. Non sono vestiti reali.'}</p><div class="demo-actions"><button class="primary" data-action="load-demo">${demoCount()===30?'Demo già caricata':`Carica ${30-demoCount()} capi demo`}</button>${demoCount()?'<button class="outline" data-action="remove-demo">Rimuovi tutte le demo</button>':''}</div></div><span class="demo-illustration">✧</span></section>
   <section class="tip"><span>✦</span><div><strong>Consiglio di stile</strong><p>Per creare outfit completi, carica almeno un capo sopra, uno sotto e un paio di scarpe. Le foto private non appariranno nei suggerimenti normali.</p></div></section></div>`;}
   function closetView(){
     const cats=[['all','Tutti'],...E().CATEGORIES.map(x=>[x,label(x)])];
@@ -72,7 +74,7 @@
   }
   function stylistView(){
     const examples=['Running con colori neutri','Cena elegante in nero','Look da ufficio in autunno'];
-    return `<div class="page stylist-page"><div class="heading"><div><p class="eyebrow">LO STYLIST DEL TUO ARMADIO</p><h1>Come vuoi <em>sentirti?</em></h1><p class="subtitle">${demoCount()?'Prove con capi illustrativi. I tuoi abiti restano separati.':'Descrivi l’occasione. Userò solo ciò che possiedi.'}</p></div><span class="stylist-symbol">✧</span></div>
+    return `<div class="page stylist-page"><div class="heading"><div><p class="eyebrow">LO STYLIST DEL TUO ARMADIO</p><h1>Come vuoi <em>sentirti?</em></h1><p class="subtitle">${demoCount()||photoDemoCount()?'Prove con capi demo. I tuoi abiti restano separati.':'Descrivi l’occasione. Userò solo ciò che possiedi.'}</p></div><span class="stylist-symbol">✧</span></div>
     <form id="stylist-form" class="stylist-form"><label class="field-caption" for="outfit-query">CHIEDI UN OUTFIT</label><textarea id="outfit-query" rows="3" placeholder="Es. Vorrei un look per una corsa al parco, con qualcosa di blu...">${esc(state.query)}</textarea>
       <div class="examples">${examples.map(q=>`<button type="button" data-query="${esc(q)}">${esc(q)} ↗</button>`).join('')}</div>
       <div class="selector-group"><label class="field-caption" for="occasion-select">OCCASIONE</label><select id="occasion-select">${E().EVENTS.map(o=>`<option value="${o}" ${state.occasion===o?'selected':''}>${E().EVENT_LABEL[o]}</option>`).join('')}</select></div>
@@ -202,6 +204,40 @@
     }catch(err){notify('Importazione non riuscita: '+err.message,true);}
     finally{setBusy(false);}
   }
+  async function loadPhotoDemo(){
+    if(state.busy)return;
+    let loaded=0;const failures=[];
+    try{
+      setBusy(true);
+      const existing=new Set(state.items.filter(i=>i.photoDemo).map(i=>i.demoKey));
+      for(const entry of PhotoWardrobe.ITEMS){
+        if(existing.has(entry.key))continue;
+        try{
+          const photo=await PhotoWardrobe.imageData(entry.asset);
+          await Vault.save(state.db,state.key,'garment',PhotoWardrobe.toRecord(entry,photo));
+          loaded++;
+          if(loaded%20===0)notify(loaded+' foto di capi reali cifrate...');
+        }catch(err){failures.push(entry.key);}
+      }
+      await refresh();state.results=null;render();
+      notify(loaded+' foto aggiunte'+(failures.length?'; '+failures.length+' non importate: riprova online':''),!!failures.length);
+    }catch(err){await refresh();render();notify('Errore importazione foto: '+err.message,true);}
+    finally{setBusy(false);}
+  }
+  async function removePhotoDemo(){
+    if(state.busy)return;
+    const ids=state.items.filter(i=>i.photoDemo).map(i=>i.id);
+    if(!ids.length){notify('Non ci sono foto demo.');return;}
+    if(!confirm('Rimuovere '+ids.length+' foto demo e i look salvati collegati? I vestiti personali e le vecchie demo illustrate non saranno cancellati.'))return;
+    try{
+      setBusy(true);
+      const gone=new Set(ids);
+      for(const look of state.saved.filter(l=>l.ids.some(id=>gone.has(id))))await Vault.remove(state.db,look.id);
+      for(const id of ids)await Vault.remove(state.db,id);
+      await refresh();state.results=null;state.view='home';render();notify(ids.length+' foto demo rimosse. I tuoi capi personali sono intatti.');
+    }catch(err){await refresh();render();notify('Rimozione parziale: '+err.message,true);}
+    finally{setBusy(false);}
+  }
   async function loadDemo(){
     if(state.busy)return;
     let loaded=0;
@@ -294,7 +330,9 @@
     if(button.dataset.category){state.category=button.dataset.category;render();return;}
     if(button.dataset.query){state.query=button.dataset.query;state.results=null;render();document.querySelector('#outfit-query')?.focus();return;}
     const action=button.dataset.action;
-    if(action==='load-demo')await loadDemo();
+    if(action==='load-photo-demo')await loadPhotoDemo();
+    else if(action==='remove-photo-demo')await removePhotoDemo();
+    else if(action==='load-demo')await loadDemo();
     else if(action==='remove-demo')await removeDemo();
     else if(action==='open-add')document.getElementById('upload-input')?.click();
     else if(action==='lock')lock();
