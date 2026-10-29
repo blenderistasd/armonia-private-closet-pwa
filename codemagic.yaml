@@ -1,43 +1,69 @@
-# Manual workflow only: no automatic trigger. Never commit signing credentials.
+# ARMONIA PRIVATE CLOSET - manual Apple build only; no automatic triggers.
+# Uses individual mac_mini_m2 free allowance only when verified.
+# Output unsigned; personal signing and physical installation are separate.
 workflows:
   armonia-ios-unsigned:
-    name: Armonia iOS R1.3 - unsigned for external signing
+    name: Armonia iOS R1.3 - unsigned ARM64
     instance_type: mac_mini_m2
-    max_build_duration: 60
+    max_build_duration: 30
     environment:
       node: v22.11.0
       xcode: latest
     scripts:
-      - name: Install dependencies
-        script: npm ci --no-audit --no-fund
-      - name: Prepare iOS bundle
+      - name: Install and run local QA on Mac
         script: |
+          set -euo pipefail
+          cd "$CM_BUILD_DIR"
+          npm ci --no-audit --no-fund
+          npm run test:logic
+          npm run test:sports
+      - name: Create iOS application with Swift Package Manager
+        script: |
+          set -euo pipefail
+          cd "$CM_BUILD_DIR"
           npm run build
           npx cap add ios --packagemanager SPM
           npx cap sync ios
-      - name: Set Armonia icon and photo access descriptions
+          test -f ios/App/App.xcodeproj/project.pbxproj
+          test -f ios/App/App/Info.plist
+          test -f ios/App/App/public/app.js
+          test -f ios/App/App/public/demo.js
+          plutil -lint ios/App/App.xcodeproj/project.pbxproj
+      - name: Apply private closet icon and permission text
         script: |
+          set -euo pipefail
           sips -z 1024 1024 "$CM_BUILD_DIR/assets/icon-512.png" \
             --out "$CM_BUILD_DIR/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png"
-          plutil -replace NSPhotoLibraryUsageDescription -string "Seleziona le fotografie dei tuoi vestiti per archiviarle soltanto sul dispositivo." \
+          plutil -replace NSPhotoLibraryUsageDescription -string "Seleziona foto dei tuoi indumenti. Non vengono trasmesse a un server." \
             "$CM_BUILD_DIR/ios/App/App/Info.plist"
-          plutil -replace NSCameraUsageDescription -string "Scatta una foto ai tuoi vestiti per aggiungerli al guardaroba privato." \
+          plutil -replace NSCameraUsageDescription -string "Fotografa un indumento da aggiungere al guardaroba privato." \
             "$CM_BUILD_DIR/ios/App/App/Info.plist"
-      - name: Build iPhone .app without signing
+          plutil -lint "$CM_BUILD_DIR/ios/App/App/Info.plist"
+      - name: Compile unsigned iPhone ARM64 app
         script: |
+          set -euo pipefail
           xcodebuild -project "$CM_BUILD_DIR/ios/App/App.xcodeproj" \
-            -scheme App -configuration Debug \
-            -destination 'generic/platform=iOS' \
+            -scheme App -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' \
             -derivedDataPath "$CM_BUILD_DIR/derived" \
-            CODE_SIGNING_ALLOWED=NO build
-      - name: Package unsigned IPA
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+      - name: Verify and export unsigned IPA
         script: |
-          mkdir -p "$CM_BUILD_DIR/export/Payload"
-          cp -R "$CM_BUILD_DIR/derived/Build/Products/Debug-iphoneos/App.app" \
-            "$CM_BUILD_DIR/export/Payload/App.app"
-          cd "$CM_BUILD_DIR/export"
-          zip -qry "$CM_BUILD_DIR/Armonia_R1_3_UNSIGNED.ipa" Payload
+          set -euo pipefail
+          APP="$CM_BUILD_DIR/derived/Build/Products/Release-iphoneos/App.app"
+          test -d "$APP"
+          test -f "$APP/Info.plist"
+          ID=$(/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' "$APP/Info.plist")
+          test "$ID" = 'it.armonia.closet.private'
+          /usr/bin/lipo -archs "$APP/App" | grep -qw arm64
+          mkdir -p "$CM_BUILD_DIR/export/Payload" "$CM_BUILD_DIR/artifacts"
+          cp -R "$APP" "$CM_BUILD_DIR/export/Payload/App.app"
+          (cd "$CM_BUILD_DIR/export" && zip -qry "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.ipa" Payload)
+          shasum -a 256 "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.ipa" > "$CM_BUILD_DIR/artifacts/Armonia_R1_3_UNSIGNED.sha256"
+          echo "UNSIGNED ARM64; requires personal iOS signing before installation" > "$CM_BUILD_DIR/artifacts/INSTALL_STATUS.txt"
     artifacts:
-      - Armonia_R1_3_UNSIGNED.ipa
-      - derived/Build/Products/Debug-iphoneos/*.app
+      - artifacts/*.ipa
+      - artifacts/*.sha256
+      - artifacts/INSTALL_STATUS.txt
+      - derived/Build/Products/Release-iphoneos/*.app
       - /tmp/xcodebuild_logs/*.log
