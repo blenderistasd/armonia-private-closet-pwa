@@ -8,5 +8,9 @@
 
 /* R1.1: decorative hero elements must not intercept CTA taps. */
 .hero-decoration,.hero-decoration *, .hero::after { pointer-events:none; }
-/* Notifications are informational; never block buttons beneath them. */
+
+/* R1.1: non-interactive notifications never intercept buttons. */
 .toast { pointer-events:none; }
+
+/* R1.2: 30-item opt-in demo laboratory */
+.demo-lab{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;margin:24px 0 0;padding:24px 26px;background:#f1e6da;border:1px solid #e3cdb9;border-radius:10px;overflow:hidden}.demo-lab h3{font:normal 29px Georgia,serif;margin:7px 0}.demo-lab p:not(.eyebrow){font-size:12px;color:#71685d;line-height:1.6;margin:0 0 15px}.demo-lab>div{z-index:1}.demo-illustration{font:110px Georgia,serif;color:#d0ab8b;align-self:center;opacity:.55}.demo-actions{display:flex;flex-wrap:wrap;gap:10px}.demo-actions button{font-size:12px;justify-content:center;padding:13px 16px}.demo-lab .eyebrow{margin-bottom:5px}.demo-lab .outline{background:#f8f2ea}.garment-card .demo-badge{display:inline-block;padding:3px 6px;margin:4px 0 0;background:#efe5d7;color:#906d50;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.10em}@media(max-width:440px){.demo-lab{padding:19px}.demo-lab h3{font-size:25px}.demo-illustration{display:none}}

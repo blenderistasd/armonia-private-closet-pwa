@@ -10,11 +10,12 @@
   const icon=(s)=>({'home':'⌂','closet':'▦','stylist':'✧','saved':'♡','settings':'⚙'})[s]||'•';
   const navs=[['home','Home'],['closet','Guardaroba'],['stylist','Stylist'],['saved','Salvati'],['settings','Altro']];
   const count=()=>state.items.length;
+  const demoCount=()=>state.items.filter(i=>i.demo===true).length;
   let toastTimeout;
   function notify(message,error=false){clearTimeout(toastTimeout);toast.textContent=message;toast.className='toast show'+(error?' danger':'');toastTimeout=setTimeout(()=>toast.className='toast',4100);}
   function setBusy(b){state.busy=b;document.querySelectorAll('button[type=submit]').forEach(x=>x.disabled=b);}
   const byId=id=>state.items.find(i=>i.id===id);
-  const photo=(item,extra='')=>imgSafe(item?.image)?`<img ${extra} src="${item.image}" alt="${esc(item.name)}" loading="lazy">`:'<div class="empty-photo">Immagine non disponibile</div>';
+  const photo=(item,extra='')=>imgSafe(item?.image)?`<img ${extra} src="${item.image}" alt="${esc(item.name)}${item.demo?' (illustrazione dimostrativa)':''}" loading="lazy">`:'<div class="empty-photo">Immagine non disponibile</div>';
   async function refresh(){
     const r=await Vault.getAll(state.db,state.key);
     state.items=r.filter(x=>x.kind==='garment').sort((a,b)=>(b.createdAt||'').localeCompare(a.createdAt||''));
@@ -47,6 +48,7 @@
   <section class="hero"><div class="hero-decoration"><span class="ring ring-one"></span><span class="ring ring-two"></span><span class="hero-star">✧</span></div><p class="hero-eyebrow">ARMONIA STYLIST</p><h1>Ogni giorno,<br><em>una versione</em><br>di te.</h1><p>Il look giusto è già nel tuo armadio. Ti aiutiamo a trovarlo.</p><button class="hero-button" data-nav="stylist">Crea il mio outfit <span>↗</span></button></section>
   <div class="kpi-row"><div class="kpi"><strong>${count().toString().padStart(2,'0')}</strong><span>Capi nel guardaroba</span></div><div class="kpi"><strong>${state.saved.length.toString().padStart(2,'0')}</strong><span>Look salvati</span></div></div>
   <div class="section-header"><div><span class="eyebrow">PERSONAL CLOSET</span><h2>Ultimi arrivi</h2></div><button class="text-link" data-nav="closet">Vedi tutto ↗</button></div>${latestGrid()}
+  <section class="demo-lab"><div><p class="eyebrow">LABORATORIO DEMO</p><h3>30 capi per provarlo.</h3><p>${demoCount()?`${demoCount()} di 30 capi illustrati inseriti, separati dai tuoi.`:'Abiti, sport, scarpe e accessori simulati per testare gli abbinamenti. Non sono vestiti reali.'}</p><div class="demo-actions"><button class="primary" data-action="load-demo">${demoCount()===30?'Demo già caricata':`Carica ${30-demoCount()} capi demo`}</button>${demoCount()?'<button class="outline" data-action="remove-demo">Rimuovi solo demo</button>':''}</div></div><span class="demo-illustration">✧</span></section>
   <section class="tip"><span>✦</span><div><strong>Consiglio di stile</strong><p>Per creare outfit completi, carica almeno un capo sopra, uno sotto e un paio di scarpe. Le foto private non appariranno nei suggerimenti normali.</p></div></section></div>`;}
   function closetView(){
     const cats=[['all','Tutti'],...E().CATEGORIES.map(x=>[x,label(x)])];
@@ -56,21 +58,21 @@
     <div class="chip-scroll">${cats.map(([id,n])=>`<button class="filter-chip ${state.category===id?'selected':''}" data-category="${id}">${n}</button>`).join('')}</div>
     <p class="results-meta">${rows.length} ${rows.length===1?'capo':'capi'} ${state.category==='intimate'?'· reparto privato':''}</p>
     ${!rows.length?`<div class="empty-gallery"><div class="empty-gallery-visual"><span>✧</span><div class="hanger">♧</div></div><h3>${count()?'Nessun capo trovato':'Inizia dal primo capo'}</h3><p>${count()?'Prova un altro filtro o aggiungi una foto.':'Carica una foto: la terremo cifrata e potrai usarla nei tuoi outfit.'}</p><button class="primary" data-action="open-add">+ Aggiungi una foto</button></div>`:
-    `<div class="garment-grid">${rows.map(i=>`<button class="garment-card" data-action="edit" data-id="${esc(i.id)}"><div class="garment-image">${photo(i)}<span class="garment-badge">${label(i.category)}</span>${i.favorite?'<span class="garment-heart">♥</span>':''}</div><div class="garment-details"><strong>${esc(i.name)}</strong><span><i class="swatch" style="background:${E().COLOR_HEX[i.color]||'#aaa'}"></i>${esc(i.color||'Colore da impostare')}</span></div></button>`).join('')}</div>`}</div>`;
+    `<div class="garment-grid">${rows.map(i=>`<button class="garment-card" data-action="edit" data-id="${esc(i.id)}"><div class="garment-image">${photo(i)}<span class="garment-badge">${label(i.category)}</span>${i.demo?'<span class="demo-badge">DEMO</span>':''}${i.favorite?'<span class="garment-heart">♥</span>':''}</div><div class="garment-details"><strong>${esc(i.name)}</strong><span><i class="swatch" style="background:${E().COLOR_HEX[i.color]||'#aaa'}"></i>${esc(i.color||'Colore da impostare')}</span></div></button>`).join('')}</div>`}</div>`;
   }
   function lookCard(look,n,saved=false) {
     const items=look.ids.map(byId).filter(Boolean);
     if(!items.length)return '';
     return `<article class="look-card"><div class="look-card-heading"><div><span class="eyebrow">${saved?'LOOK SALVATO':`PROPOSTA ${String(n).padStart(2,'0')}`}</span><h3>${saved?esc(look.title||'Il mio look'):`${esc(E().EVENT_LABEL[state.occasion])}`}</h3></div><span class="look-number">${String(n).padStart(2,'0')}</span></div>
-    <div class="look-composition">${items.map(i=>`<div class="look-piece">${photo(i)}<span>${esc(i.name)}</span></div>`).join('')}</div>
+    <div class="look-composition">${items.map(i=>`<div class="look-piece">${photo(i)}<span>${esc(i.name)}${i.demo?' · DEMO':''}</span></div>`).join('')}</div>
     <p class="look-rationale">${esc(look.explanation||'Abbinamento con i capi del tuo catalogo.')}</p>
     ${look.missing?.length?`<p class="missing-notice">Da completare: ${look.missing.map(label).join(', ')}</p>`:''}
     <div class="look-actions">${saved?`<button class="outline" data-action="remove-look" data-id="${esc(look.id)}">Rimuovi</button>`:
-    `<button class="outline" data-action="save-look" data-ids="${esc(look.ids.join(','))}">♡ Salva questo look</button>`}<span>${items.length} capi reali</span></div></article>`;
+    `<button class="outline" data-action="save-look" data-ids="${esc(look.ids.join(','))}">♡ Salva questo look</button>`}<span>${items.length} capi ${items.some(i=>i.demo)?'con demo':'reali'}</span></div></article>`;
   }
   function stylistView(){
     const examples=['Running con colori neutri','Cena elegante in nero','Look da ufficio in autunno'];
-    return `<div class="page stylist-page"><div class="heading"><div><p class="eyebrow">LO STYLIST DEL TUO ARMADIO</p><h1>Come vuoi <em>sentirti?</em></h1><p class="subtitle">Descrivi l'occasione. Userò solo ciò che possiedi.</p></div><span class="stylist-symbol">✧</span></div>
+    return `<div class="page stylist-page"><div class="heading"><div><p class="eyebrow">LO STYLIST DEL TUO ARMADIO</p><h1>Come vuoi <em>sentirti?</em></h1><p class="subtitle">${demoCount()?'Prove con capi illustrativi. I tuoi abiti restano separati.':'Descrivi l’occasione. Userò solo ciò che possiedi.'}</p></div><span class="stylist-symbol">✧</span></div>
     <form id="stylist-form" class="stylist-form"><label class="field-caption" for="outfit-query">CHIEDI UN OUTFIT</label><textarea id="outfit-query" rows="3" placeholder="Es. Vorrei un look per una corsa al parco, con qualcosa di blu...">${esc(state.query)}</textarea>
       <div class="examples">${examples.map(q=>`<button type="button" data-query="${esc(q)}">${esc(q)} ↗</button>`).join('')}</div>
       <div class="selector-group"><label class="field-caption" for="occasion-select">OCCASIONE</label><select id="occasion-select">${E().EVENTS.map(o=>`<option value="${o}" ${state.occasion===o?'selected':''}>${E().EVENT_LABEL[o]}</option>`).join('')}</select></div>
@@ -87,7 +89,7 @@
     <div class="settings-actions"><h2>Backup e sicurezza</h2><button class="setting-action" data-action="export">Esporta backup cifrato <span>↓</span></button><small>Consigliato dopo ogni caricamento importante. Il backup include foto e look, sempre cifrati.</small>
     <button class="setting-action" data-action="lock">Blocca subito il guardaroba <span>⌑</span></button><button class="setting-action danger-link" data-action="wipe">Elimina definitivamente tutti i dati <span>×</span></button></div>
     <div class="footnote"><strong>Nota importante</strong><p>Disinstallare l'app o cancellare i dati di Safari può eliminare il catalogo locale. Conserva il backup e la password separatamente. Nessun recupero password è possibile.</p></div>
-    <p class="version">ARMONIA · MVP 1.0 · PRIVACY-FIRST · OFFLINE</p></div>`;}
+    <p class="version">ARMONIA · R1.2 · DEMO 30 · PRIVACY-FIRST · OFFLINE</p></div>`;}
   function editorModal(){
     if(!state.editor)return '';
     const i=state.editor;
@@ -163,6 +165,37 @@
     }catch(err){notify('Importazione non riuscita: '+err.message,true);}
     finally{setBusy(false);}
   }
+  async function loadDemo(){
+    if(state.busy)return;
+    let loaded=0;
+    try {
+      setBusy(true);
+      const known=new Set(state.items.filter(i=>i.demo).map(i=>i.demoKey));
+      for(const entry of DemoWardrobe.ITEMS){
+        if(known.has(entry.key))continue;
+        const image=await DemoWardrobe.imageData(entry.asset);
+        await Vault.save(state.db,state.key,'garment',DemoWardrobe.toRecord(entry,image));
+        loaded++;
+      }
+      await refresh();state.results=null;render();notify(loaded?`${loaded} capi DEMO aggiunti. Prova lo Stylist!`:'Tutti i 30 capi DEMO sono già presenti.');
+    }catch(err){await refresh();render();notify('Importazione demo parziale ('+loaded+'): '+err.message,true);}
+    finally{setBusy(false);}
+  }
+  async function removeDemo(){
+    if(state.busy)return;
+    const ids=state.items.filter(i=>i.demo).map(i=>i.id);
+    if(!ids.length){notify('Nessun capo demo presente.');return;}
+    if(!confirm(`Eliminare ${ids.length} capi DEMO e i look salvati che li contengono? Le tue foto personali resteranno intatte.`))return;
+    try{
+      setBusy(true);
+      const known=new Set(ids);
+      const linked=state.saved.filter(l=>l.ids.some(id=>known.has(id)));
+      for(const l of linked)await Vault.remove(state.db,l.id);
+      for(const id of ids)await Vault.remove(state.db,id);
+      await refresh();state.results=null;state.view='home';render();notify(`${ids.length} capi demo rimossi. Foto personali intatte.`);
+    }catch(err){await refresh();render();notify('Pulizia DEMO incompleta: '+err.message,true);}
+    finally{setBusy(false);}
+  }
   async function saveGarment(form){
     if(state.busy)return;
     const f=new FormData(form);const draft=state.editor;
@@ -224,7 +257,9 @@
     if(button.dataset.category){state.category=button.dataset.category;render();return;}
     if(button.dataset.query){state.query=button.dataset.query;state.results=null;render();document.querySelector('#outfit-query')?.focus();return;}
     const action=button.dataset.action;
-    if(action==='open-add')document.getElementById('upload-input')?.click();
+    if(action==='load-demo')await loadDemo();
+    else if(action==='remove-demo')await removeDemo();
+    else if(action==='open-add')document.getElementById('upload-input')?.click();
     else if(action==='lock')lock();
     else if(action==='edit'){const row=byId(button.dataset.id);if(row){state.editor={...row};render();}}
     else if(action==='close-editor'){
